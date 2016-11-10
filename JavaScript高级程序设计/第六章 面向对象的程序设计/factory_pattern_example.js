@@ -1,14 +1,14 @@
+/*global alert*/
 'use strict';
-
 function createPerson(name, age, job) {
 	var p = new Object();
 	
-	o.name = name;
-	o.age = age;
-	o.job = job;
-	o.sayName = function () {
-		alert(this.name);
-	}
+	p.name = name;
+	p.age = age;
+	p.job = job;
+	p.sayName = function () {
+		console.log(this.name);
+	};
 	return  p;
 }
 
