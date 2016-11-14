@@ -4,8 +4,10 @@
 // 实现柯里化的Func
 function  currying(func) {
 	var args = Array.prototype.slice.call(arguments,1);
+	
 	return function () {
 		var newArgs = args.concat(Array.prototype.slice.call(arguments));
+		
 		return func.apply(null, newArgs);
 	}
 }
