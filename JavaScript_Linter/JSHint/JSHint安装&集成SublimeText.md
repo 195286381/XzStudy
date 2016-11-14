@@ -1,4 +1,4 @@
-## JavaScript静态代码检测工具-JSHint的使用
+## JavaScript静态代码检测工具-JSHint的使用 :smile::smile::smile::smile::smile::smile:
 
 javaScript的静态检测工具已经有很不少,由最初的JSLint，到后来的JSHint JSCS ESLint,到最新的facebook的Flow等等.这里要介绍的是JSHint静态代码检测工具.
 
