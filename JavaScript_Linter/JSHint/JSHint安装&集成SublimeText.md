@@ -1,6 +1,6 @@
 ## JavaScript静态代码检测工具-JSHint的使用 :smile::smile::smile::smile::smile::smile:
 
-javaScript的静态检测工具已经有很不少,由最初的JSLint，到后来的JSHint JSCS ESLint,到最新的facebook的Flow等等.这里要介绍的是JSHint静态代码检测工具.
+javaScript的静态检测工具已经有很不少, 由最初的JSLint, 到后来的JSHint, JSCS, ESLint, 到最新的facebook的Flow等等.这里要介绍的是JSHint静态代码检测工具.
 
 ### [JSHint官网](http://jshint.com/docs/)里面有详尽的介绍.这里大致介绍一下快速安装并集成到sublime进行静态代码检测以及对应具体配置.
 
@@ -97,5 +97,7 @@ JSHint通过`.jshintrc`文件配置验证规则，该文件应放置在验证目
 ```
 
 在`"user->linters->jshint->args"`数组的第二个填入存放.jshintrc配置文件的文件路径，这样JSHint会读取该路径下的配置进行静态检测。
+
+最后呈现一张代码检测效果图 :neckbeard::neckbeard::neckbeard:
 
 ![](https://github.com/195286381/file/blob/master/images/20161114/jshint_error.jpg?raw=true)
