@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>just a practice</title>
+</head>
+<body>
+    <form action="http://www.hao123.com">
+        <input id="ip" type="text">
+        <label for="email">email</label><input id="email" type="email">
+        <label for="btn">按钮</label><input id="btn" type="button" value="输入你的名字">
+        <input type="submit" value='hh'>
+        <input id="validData" type="button" value="检验数据有效性">
+    </form>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            var btn = document.getElementById('btn');
+            btn.addEventListener('click', function(e) {
+                var ele = document.getElementById('ip');
+                ele.value = '#请输入你的名字#';
+                ele.setSelectionRange(1, ele.value.length-1);
+                ele.focus();
+            });
+            var vBtn = document.getElementById('validData');
+            vBtn.addEventListener('click', function(e) {
+               var ele = document.getElementById('email');
+               alert('validity:' + ele.checkValidity()); 
+            });
+        }
+    </script>
+</body>
+</html>
