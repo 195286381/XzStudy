@@ -163,3 +163,11 @@ s,i,em{font-style:normal;text-decoration:none;}
     float: right;
     margin:25px 65px 0 0 ;
 }
+
+var d = document.getElementById('div').onclick = function () {
+    if (a === b) {
+    console.log('addYourName');
+}
+    )
+}
+}
