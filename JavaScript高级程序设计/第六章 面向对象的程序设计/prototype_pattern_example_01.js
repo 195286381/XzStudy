@@ -1,7 +1,10 @@
 function Parent() {
 	
 };
-
+/**
+ *
+ * @constructor
+ */
 function Child() {
 	
 };

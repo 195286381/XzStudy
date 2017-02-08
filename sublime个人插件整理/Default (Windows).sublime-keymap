@@ -1,0 +1,14 @@
+[
+	{ "keys": ["ctrl+k", "ctrl+>"], "command": "focus_neighboring_group", "args": {"forward": false} },
+	{ "keys": ["ctrl+k", "ctrl+<"], "command": "focus_neighboring_group" },	
+    { "keys": ["alt+;"], "command": "run_macro_file", "args": {"file":"Packages/User/自动插入分号结尾.sublime-macro"} },
+    { "keys": ["alt+."], "command": "run_macro_file", "args": {"file":"Packages/User/跳出括号加点.sublime-macro"} },
+    { "keys": ["alt+["], "command": "run_macro_file", "args": {"file":"Packages/User/中括号数组选择.sublime-macro"} },
+    {"keys": ["enter"], "command": "move", "args": {"by": "characters", "forward": true}, "context":  
+        [  
+            { "key": "following_text", "operator": "regex_contains", "operand": "^[)\\]\\>\\'\\\"\\ %>\\}\\;\\,]", "match_all": true },  
+            { "key": "preceding_text", "operator": "not_regex_match", "operand": "^.*\\{$", "match_all": true  },  
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false }  
+        ]  
+    }  
+]

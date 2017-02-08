@@ -1,4 +1,12 @@
 'use strict';
+
+/**
+ *
+ * @param name
+ * @param age
+ * @param job
+ * @constructor
+ */
 function Person (name, age, job) {
 	this.name = name;
 	this.age = age;

@@ -1,0 +1,24 @@
+[
+	{
+		"args":
+		{
+			"to": "brackets"
+		},
+		"command": "expand_selection"
+	},
+	{
+		"args":
+		{
+			"by": "word_ends",
+			"forward": true
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"contents": "[$0]"
+		},
+		"command": "insert_snippet"
+	}
+]
