@@ -1,0 +1,60 @@
+<!-- create by xzzzzz in 2017/02/22 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圣杯布局-by xzzzzz</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content .main,
+        .content .left,
+        .content .right {
+            float: left;
+            line-height: 150px;
+            text-align: center;
+        }
+
+        .content {
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+
+        .content .main {
+            width: 100%;
+            background-color: red;
+        }
+
+        .content .left {
+            width: 150px;
+            margin-left: -100%;
+            background: yellow;
+            position: relative;
+            left: -150px;
+        }
+
+        .content .right {
+            width: 150px;
+            margin-left: -150px;
+            background: blue;
+            position: relative;
+            right: -150px;
+        }ss
+
+        .content {
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main">main content</div>
+        <div class="left">left content</div>
+        <div class="right">right content</div>
+    </div>
+</body>
+</html>
