@@ -1,6 +1,6 @@
 [
-	{ "keys": ["ctrl+k", "ctrl+>"], "command": "focus_neighboring_group", "args": {"forward": false} },
-	{ "keys": ["ctrl+k", "ctrl+<"], "command": "focus_neighboring_group" },	
+    { "keys": ["ctrl+k", "ctrl+>"], "command": "focus_neighboring_group", "args": {"forward": false} },
+    { "keys": ["ctrl+k", "ctrl+<"], "command": "focus_neighboring_group" }, 
     { "keys": ["alt+;"], "command": "run_macro_file", "args": {"file":"Packages/User/自动插入分号结尾.sublime-macro"} },
     { "keys": ["alt+."], "command": "run_macro_file", "args": {"file":"Packages/User/跳出括号加点.sublime-macro"} },
     { "keys": ["alt+["], "command": "run_macro_file", "args": {"file":"Packages/User/中括号数组选择.sublime-macro"} },
@@ -10,5 +10,6 @@
             { "key": "preceding_text", "operator": "not_regex_match", "operand": "^.*\\{$", "match_all": true  },  
             { "key": "auto_complete_visible", "operator": "equal", "operand": false }  
         ]  
-    }  
+    },
+    { "keys": ["ctrl+shift+b"], "command": "cancel_build"} // 关闭building
 ]
