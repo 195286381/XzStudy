@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+	<ul class="nav nav-tabs" id="navTabs">
+	  <li role="presentation" class="active"><a href="#">Home</a></li>
+	  <li role="presentation"><a href="#">Profile</a></li>
+	  <li role="presentation"><a href="#">Messages</a></li>
+	</ul>
+	<ul class="list-group">
+  <li class="list-group-item" id="id1">id1</li>
+  <li class="list-group-item" id="id2">id2</li>
+  <li class="list-group-item" id="id3">id3</li>
+</ul>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// 获取标签元素
+			var $navEle = $('#navTabs')
+			
+			// 设置item的监听
+			$('.list-group').click(function(event) {
+				console.log(1);
+				var ele = event.target;
+				// console.log(ele.id);
+				// 处理item事件点击.
+				handleItemClick(ele)
+			})
+
+			// 处理item的监听
+			function handleItemClick(ele) {
+				
+				// 获取选中 item 的标签 
+				var id = ele.id;
+				console.log(id)
+
+				// 这部分代码添加标签lab
+				var $ele = $('<li role="presentation" id="' + id + 'Item" class="active"><a href="#">Messages</a></li>');
+				if ($("#" + id + "Item").length === 0) {  // 避免重复添加.
+					$navEle.append($('<li role="presentation" id="' + id + 'Item"><a href="#">Messages</a></li>'))
+				}
+
+				// 这部分代码处理高亮.
+				var tabId = id + "Item"
+				$('#' + tabId).addClass('active')
+											.siblings().removeClass('active');
+			}
+		})
+
+	</script>
+</body>
+</html>
