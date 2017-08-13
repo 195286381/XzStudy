@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			height:  3000px;
+			text-align: center;
+		}
+		.header {
+			height: 200px;
+			background-color: purple;
+			border-radius: 5px;
+		}
+		.header-nav {
+			height: 100px;
+			background: black;
+			border-radius: 5px;
+			color: white;
+			line-height: 100px;
+			font-size: 30px;
+			text-align: center;
+			font-style: italic;
+		}
+		.bottom-button-container {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+
+		}
+		.bottom-button-container a {
+			display: block;
+			width: 100px;
+			height: 100px;
+			background: aqua;
+			border-radius: 5px;
+		}
+
+		.nav-fiexd {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header"></div>
+	<div class="header-nav">Header Nav</div>
+	<!-- 底部按钮 -->
+	<div class="bottom-button-container">
+		<a href="#"></a>
+	</div>
+	<script
+  src="http://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+	<script>
+		$(function() {
+			// 导航在一定高度置顶
+			var headerHeight = $('.header').height() // 200
+			var $headerNav = $('.header-nav');
+			console.log(`headerHeight: ${headerHeight}`);
+			$(window).scroll(function(e) {
+				console.log($('body').scrollTop());
+				if ($('body').scrollTop() >= headerHeight) {
+					$headerNav.addClass('nav-fiexd')
+				} else {
+					$headerNav.removeClass('nav-fiexd')
+				}
+				
+			})
+
+			// 底部按钮
+			var $bottomBtnContainer = $('.bottom-button-container');
+			$bottomBtnContainer.find('a').click(function(e) {
+				alert('hello world');
+				// doSomething.DTRACE_HTTP_CLIENT_REQUEST();
+			})
+		})
+	</script>
+</body>
+</html>
