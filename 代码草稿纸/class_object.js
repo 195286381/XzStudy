@@ -16,7 +16,6 @@
   var object = {
     Class: function() {
       var P = arguments[0];
-      console.log(typeof P.initilize)
       var c = typeof P.initilize === 'function' ? P.initilize : function() {};
       c.prototype = P;
       return c;
@@ -25,9 +24,11 @@
   return object;
 });
 
-// DEMO:
-// 
-// var Obj = root.__tools__.Class({
+
+/**
+ * 浏览器环境DEMO
+ */
+// var Obj = __tools__.Class({
 //   initilize: function(name, age) {
 //     this.name = name;
 //     this.age = age;
