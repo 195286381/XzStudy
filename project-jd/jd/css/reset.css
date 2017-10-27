@@ -1,0 +1,149 @@
+/* 清除内外边框 */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+legend,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 12px/150% arial sans-serif;
+  color: #666;
+  background: #fff;
+}
+
+/* 清除列表样式 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 格式化标题 css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 100%;
+}
+
+/* 标记占位符格式化 */
+s,
+i,
+em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* 去掉图片底侧的3像素缝隙 */
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/* 清除输入框外边框 */
+image,
+input,
+button,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+select,
+input {
+  vertical-align: middle;
+}
+
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* 表单样式 */
+table {
+  border-collapse: collapse;
+}
+
+/* 默认多行文本不拖动 */
+textarea {
+  resize: none;
+}
+
+/* 清除浮动 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom: 1;
+}
+
+/* a标签设置 */
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c81623;
+}
+
+.w {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.al {
+  text-align: left;
+}
+
+.ar {
+  text-align: right;
+}
+
+.ac {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.font12 {
+  font-size: 12px;
+}

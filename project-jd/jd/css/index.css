@@ -1,0 +1,45 @@
+.shortcut {
+  width: 100%;
+  min-width: 1210px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f1f1f1;
+}
+
+.shortcut .fl {
+  position: relative;
+}
+
+.shortcut .dt {
+  padding: 0 25px 0 10px;
+}
+.shortcut .fl i {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+
+  width: 15px;
+  height: 7px;
+
+  font: 400 15px/15px "宋体";
+
+  overflow: hidden;
+}
+
+.shortcut .fl s {
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+.fr ul li {
+  float: left;
+  margin-left: 5px;
+}
+
+.fr .line {
+  width: 2px;
+  height: 30px;
+  margin: 0 5px;
+  background-color: red;
+}
